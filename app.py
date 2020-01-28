@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#! /usr/local/bin/python
 import SimpleHTTPServer
 import SocketServer
 import os
@@ -12,7 +12,7 @@ info = {
 	"version": 1
 }
 with open('info.json', 'w') as outfile:
-    json.dump(str(info), outfile)
+    json.dump(info, outfile)
     outfile.write("\n")
 
 # configure and run the server
